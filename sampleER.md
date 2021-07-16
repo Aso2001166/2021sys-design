@@ -58,13 +58,13 @@ package "ECサイト" as target_system {
     price 
     num
   }
-  entity "カテゴリマスタ" as order_category <m_category_category><<M,TRANSACTION_MARK_COLOR>>{
+  entity "カテゴリマスタ" as order_category <m_category_category><<M,MASTER_MARK_COLOR>>{
   +category_id[PK]
   --
   name
   reg_date
   }
-   entity "商品マスタ" as order_item <m_category_items><<M,TRANSACTION_MARK_COLOR>>{
+   entity "商品マスタ" as order_item <m_category_items><<M,MASTER_MARK_COLOR>>{
   +item_code[PK]
   --
   item_name
