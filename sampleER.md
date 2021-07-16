@@ -64,5 +64,17 @@ package "ECサイト" as target_system {
   name
   reg_date
   }
+   entity "商品マスタ" as order_item <m_category_items><<M,TRANSACTION_MARK_COLOR>>{
+  +item_code[PK]
+  --
+  item_name
+  price
+  #category_id[FK]
+  image
+  detail
+  del_flag
+  reg_date
+  }
+  
 @enduml
 ```
