@@ -43,14 +43,14 @@ package "ECサイト" as target_system {
         del_flag
         reg_date
     }
-     entity "顧客テーブル" as order<d_purchase> <<T,TRANSACTION_MARK_COLOR>>{
+     entity "購入テーブル" as order<d_purchase> <<T,TRANSACTION_MARK_COLOR>>{
     +order_id[PK]
     --
     # customer_code[FK]
     purchase_date
     total_price
     }
-    entity "顧客詳細テーブル" as oder_detaile <d_purchase_detail><<T,TRANSACTION_MARK_COLOR>>{
+    entity "購入詳細テーブル" as oder_detaile <d_purchase_detail><<T,TRANSACTION_MARK_COLOR>>{
      +order_id [PK]
     +detail_  [PK]
     --
@@ -78,7 +78,7 @@ package "ECサイト" as target_system {
   customer       |o-ri-o{     order 
   order          ||-ri-|{     order_detail 
  order_detail    }-do-||     order_category 
- order_category          }o-le-||    order_item
+ order_category   }o-le-||    order_item
 
  
   
