@@ -58,5 +58,11 @@ package "ECサイト" as target_system {
     price 
     num
   }
+  entity "カテゴリマスタ" as order_category <m_category_category><<T,TRANSACTION_MARK_COLOR>>{
+  +category_id[PK]
+  --
+  name
+  reg_date
+  }
 @enduml
 ```
