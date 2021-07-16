@@ -50,7 +50,7 @@ package "ECサイト" as target_system {
     purchase_date
     total_price
     }
-    entity "顧客詳細テーブル" as order<d_purchase> <<T,TRANSACTION_MARK_COLOR>>{
+    entity "顧客詳細テーブル" as oder_detaile <d_purchase_detail><<D,TRANSACTION_MARK_COLOR>>{
      +order_id [PK]
     +detail_  [PK]
     --
