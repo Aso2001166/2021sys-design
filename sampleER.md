@@ -77,8 +77,7 @@ package "ECサイト" as target_system {
   }
   customer       |o-ri-o{     order 
 
-  order          ||-ri-|{     order_detail 
-
+  
  order_detail    }-do-||     category 
 
  category          }o-le-||     item
