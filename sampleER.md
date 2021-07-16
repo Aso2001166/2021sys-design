@@ -75,7 +75,6 @@ package "ECサイト" as target_system {
   del_flag
   reg_date
   }
-  customer       |o-ri-o{     purcha
   
   
 @enduml
