@@ -43,6 +43,14 @@ package "ECサイト" as target_system {
         del_flag
         reg_date
     }
+     entity "顧客テーブル" as order<d_purchase> <<T,TRANSACTION_MARK_COLOR>>{
+    +order_id[PK]
+    --
+    # customer_code[FK]
+    purchase_date
+    total_price
+    }
+    
   }
 @enduml
 ```
