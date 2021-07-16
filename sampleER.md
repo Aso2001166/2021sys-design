@@ -76,11 +76,9 @@ package "ECサイト" as target_system {
   reg_date
   }
   customer       |o-ri-o{     order 
-
-  
- order_detail    }-do-||     category 
-
- category          }o-le-||     item
+  order          ||-ri-|{     order_detail 
+ order_detail    }-do-||     order_category 
+ order_category          }o-le-||    order_item
 
  
   
